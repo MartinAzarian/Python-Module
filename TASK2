@@ -1,0 +1,6 @@
+a = int(input("Введите число "))
+if a > 0:
+ mystr = ''
+ for i in range(a+1):
+     mystr = mystr + (str(i) + ' ')*i
+ print(mystr[0:a*2])
