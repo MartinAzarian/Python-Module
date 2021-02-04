@@ -1,0 +1,13 @@
+def modify_list(l):
+    lenght = len(l)-1
+    while lenght!=-1:
+        if l[lenght]%2:
+            del l[lenght]
+        else:
+            l[lenght]=l[lenght]//2
+        lenght -=1
+    return
+myList = [210, 14, 13, 7, 15, 2, 4]
+print("Лист в начале ", myList)
+modify_list(myList)
+print("В конце",myList)
